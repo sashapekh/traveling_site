@@ -5,8 +5,35 @@
     <meta charset="UTF-8">
     <title>Test page</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
 </head>
 <body>
- <h1>Test main page</h1>
+    <div class="container ">
+       <div class="masthead">
+           <h2 class="text-muted">Project name</h2>
+           <div class="navigation">
+           <nav class="navbar navbar-default">
+               <ul class="nav nav-pills">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Tours</a></li>
+                   <li><a href="#">various countries</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Our Blog</a></li>
+               </ul>
+           </nav>
+           </div>
+       </div>
+
+        <div class="jumbotron">
+            <h1>traveling company</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus,
+                tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+            <p class="btn-buy"><a href="#" class="btn btn-lg btn-success">look our tours</a></p>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
