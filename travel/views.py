@@ -9,3 +9,11 @@ def main_site(request):
 
 def about(request):
     return render(request, 'about.html', {})
+
+
+def tours(request):
+    return render(request, 'tour.html')
+
+
+def contact(request):
+    return render(request, 'contact.html', {})

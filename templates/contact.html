@@ -1,0 +1,22 @@
+{% extends "main-for-all-pages.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="text-center">Mail</h3>
+            <p class="text-center"><img src="{% static 'img/contact/letter.png' %}" alt=""/></p>
+            <h4 class="text-center">Sample@test.ua</h4>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Phone</h3>
+            <p class="text-center"><img src="{% static 'img/contact/phone.png' %}" alt=""/></p>
+            <h4 class="text-center">+38(222)22-22-22</h4>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="text-center">Address</h3>
+            <p class="text-center"><img src="{% static 'img/contact/addres.png' %}" alt=""/></p>
+            <h4 class="text-center">Kyiv , st.Hrechatic 44-a</h4>
+        </div>
+    </div>
+{% endblock %}
