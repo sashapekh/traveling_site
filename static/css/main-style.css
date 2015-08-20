@@ -50,3 +50,14 @@
     text-align: center;
     color: #a87623 ;
 }
+.content .row h1, h2 , h3 {
+    color:#a87623 ;
+}
+
+.content .row img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.content .row .cont {
+    margin-bottom: 50px;
+}

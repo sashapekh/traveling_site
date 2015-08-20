@@ -1,11 +1,13 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Test page</title>
+    <title>Traveling</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/main-style.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico'%}" type="imaga/x-icon"/>
 </head>
 <body>
     <div class="container ">
@@ -14,10 +16,9 @@
            <div class="navigation">
            <nav class="navbar navbar-default">
                <ul class="nav nav-pills">
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">About</a></li>
+                   <li><a href="{% url 'travel.views.main_site' %}">Home</a></li>
+                   <li><a href="{% url 'travel.views.about' %}">About</a></li>
                    <li><a href="#">Tours</a></li>
-                   <li><a href="#">various countries</a></li>
                    <li><a href="#">Contact</a></li>
                    <li><a href="#">Our Blog</a></li>
                </ul>
