@@ -1,39 +1,32 @@
+{% extends 'main-for-all-pages.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Test page</title>
-    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
-</head>
-<body>
-    <div class="container ">
-       <div class="masthead">
-           <h2 class="text-muted">Project name</h2>
-           <div class="navigation">
-           <nav class="navbar navbar-default">
-               <ul class="nav nav-pills">
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Tours</a></li>
-                   <li><a href="#">various countries</a></li>
-                   <li><a href="#">Contact</a></li>
-                   <li><a href="#">Our Blog</a></li>
-               </ul>
-           </nav>
-           </div>
-       </div>
+{% block content %}
 
-        <div class="jumbotron">
+     <div class="jumbotron">
             <h1>traveling company</h1>
             <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus,
                 tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
             <p class="btn-buy"><a href="#" class="btn btn-lg btn-success">look our tours</a></p>
+     </div>
+
+    <h1 class="mid-media text-uppercase">travel were you want</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class=>Turkey</h3>
+            <p class="img-center"><a href="#"><img src="{% static 'img/turkey.jpg' %}" alt="" class="img-rounded" width="300" height="250"/></a></p>
+            <p class="text-capitalize">Turkey has so much epic history it's mind-blowing. Check out the ancient city of Troy or the
+                battle shores of Gallipoli. An adventure in Turkey is sure to amaze.</p>
+        </div>
+        <div class="col-lg-4">
+            <h3>Japan</h3>
+             <p class="img-center"><a href="#"><img src="{% static 'img/japan.jpg' %}" alt="" class="img-rounded" width="300" height="250"/></a></p>
+            <p class="text-capitalize">There's a wide range of Japanese tours available through Flight Centre, so for availability and great rates call Flight Centre today or visit in store.</p>
+        </div>
+        <div class="col-lg-4">
+            <h3>Ukraine</h3>
+             <p class="img-center"><a href="#"><img src="{% static 'img/ukraine.jpg' %}" alt="" class="img-rounded" width="300" height="250"/></a></p>
+            <p class="text-capitalize">Ukrainian tour to Costwolds will include Hidcote Manor Garden,
+                Upper and Lower Slaughters, Bourton-on-the-Water (with Model Village).</p>
         </div>
     </div>
-
-
-
-</body>
-</html>
+{% endblock %}
