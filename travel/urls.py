@@ -6,4 +6,7 @@ urlpatterns = [
     url(r'^about/', views.about),
     url(r'tours/', views.tours),
     url(r'contact/', views.contact),
+    url(r'form/', views.contactView),
+    url(r'testpage/', views.testpage),
+    url(r'lab4/', views.lab4)
 ]

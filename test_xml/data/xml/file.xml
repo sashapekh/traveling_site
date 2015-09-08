@@ -1,0 +1,21 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<alex:notebook xmlns:alex="http://www.wapforum.org/DTD/xhtml-mobile10-flat.dtd">
+    <alex:person>
+
+        <alex:name first="alexander" second="---" surname="pekh"/>
+
+        <alex:birthday>31.12.1995</alex:birthday>
+
+        <alex:addres>
+            <alex:street>street</alex:street>
+            <alex:city>city</alex:city>
+            <alex:zip>zip</alex:zip>
+        </alex:addres>
+
+        <alex:phone-list>
+            <alex:work-phone>39340-22</alex:work-phone>
+            <alex:work-phone>222-222-22</alex:work-phone>
+        </alex:phone-list>
+
+    </alex:person>
+</alex:notebook>

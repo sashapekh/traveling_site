@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'travel',
+    'livereload',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -112,3 +113,8 @@ STATICFILES_DIRS = (
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sashapekh@gmail.com'
+EMAIL_HOST_PASSWORD = 'sasha5625121'

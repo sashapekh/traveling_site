@@ -1,0 +1,10 @@
+{% extends 'main-for-all-pages.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+    <script src="{% static 'js/script.js' %}"></script>
+    <h1>AngularJS</h1>
+    <h2>hello again</h2>
+    <p ng-init=" name ='World'">Hello {{ name }}</p>
+{% endblock %}
