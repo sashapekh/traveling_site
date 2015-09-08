@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'contact/', views.contact),
     url(r'form/', views.contactView),
     url(r'testpage/', views.testpage),
-    url(r'lab4/', views.lab4)
+    url(r'lab4/', views.lab4),
+    url(r'mysql_test', views.mysql_view)
 ]

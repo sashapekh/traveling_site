@@ -1,6 +1,5 @@
 {% extends 'main-for-all-pages.html' %}
 {% load staticfiles %}
-
 {% block content %}
         <div class="content">
             <table border="2" width="600px;" class="table_stile text-center" >
@@ -28,51 +27,9 @@
 
             </table>
             <hr/>
-        <h3 class="text-center">Other table</h3>
 
-    <div class="row">
-            <div class="col-lg-1" style="background-color: #ff6857; margin-right: -20px; padding-right:-2px;">
-                <table border="2">
-                    <tr>
-                        <th><p>Date</p></th>
-                    </tr>
-                    {% for char in date %}
-                        <tr>
-                            <th><p>{{ char }}</p></th>
-                        </tr>
-                    {% endfor %}
 
-                </table>
-            </div>
 
-            <div class="col-lg-1" style="background-color: #f4fff3; padding-left: 0px;">
-                <table border="2">
-                    <tr>
-                        <th><p>Time</p></th>
-                    </tr>
-                    {% for char in date %}
-                            <tr>
-                                <th><p>{{ char }}</p></th>
-                            </tr>
-                    {% endfor %}
-
-                </table>
-            </div>
-
-            <div class="col-lg-4" style="background-color: #5671ff;">
-                <table border="2">
-                    <tr style="padding: 50px;">
-                        <th><p>Text</p></th>
-                    </tr>
-                    {% for char in text %}
-                        <tr style="padding: 50px;">
-                            <th><p>{{ char }}</p></th>
-                        </tr>
-                    {% endfor %}
-
-                </table>
-            </div>
-    </div>
 
 
 

@@ -3,7 +3,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import send_mail, BadHeaderError
 from lab4.Print_file import result
-
+from .models import Products, Customer, Order
+from tables import ProductTable, OrderTable , CustomerTable
+from django_tables2 import RequestConfig
 # Create your views here.
 
 
@@ -72,3 +74,18 @@ def lab4(request):
     time = result_dict['time']
 
     return render(request, 'lab4_test.html', {'result_dict': result_dict, 'text': text, 'time': time, 'date': date})
+
+
+def mysql_view(request):
+    Customer_table = CustomerTable(Customer.objects.all())
+    RequestConfig(request).configure(Customer_table)
+
+    Order_table = OrderTable(Order.objects.all())
+    RequestConfig(request).configure(Order_table)
+
+    Product_table = ProductTable(Products.objects.all())
+    RequestConfig(request).configure(Product_table)
+
+    return render(request, 'mysql_test.html', {'Customer_table': Customer_table,
+                                               'Order_table': Order_table,
+                                               'Product_table': Product_table})
