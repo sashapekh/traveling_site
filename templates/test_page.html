@@ -1,0 +1,26 @@
+{% extends 'main-for-all-pages.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <table border="3">
+        <tr>
+            <td>Test_1</td>
+            <td>Test_2</td>
+            <td>Test_3</td>
+            <td>Test_4</td>
+        </tr>
+    </table>
+
+    <p>{{ text }}</p>
+
+    <table border="3">
+    {% for char in text %}
+        <tr class="{% cycle 'row1' 'row2' %}">
+            <td>test_1</td>
+        </tr>
+    {% endfor %}
+
+    </table>
+    <!-- kommenntariy -->
+
+{% endblock %}

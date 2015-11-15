@@ -4,29 +4,41 @@
 <html ng-app>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta name="author" content="Alexander Pekh"/>
+    <meta name="description" content="traveling company for buying tours to Ukraine, Japan, Turkey"/>
+    <meta name="keywords" content="traveling company,Turkey,Japan,Ukraine,TRAVEL WERE YOU WANT"/>
+    <meta name="title" content="Buy tours in kiev"/>
     <title>Traveling</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/main-style.css' %}"/>
     <link rel="shortcut icon" href="{% static 'img/favicon.ico'%}" type="imaga/x-icon"/>
     <script src="{% static 'js/jquery/jquery-1.11.3.min.js' %}"></script>
     <script src="{% static 'js/angular/angular.js' %}"></script>
+    <meta />
 </head>
 <body>
     <div class="container ">
-       <div class="masthead">
-           <h2 class="text-muted">Project name</h2>
-           <div class="navigation">
+
+
            <nav class="navbar navbar-default">
-               <ul class="nav nav-pills">
-                   <li><a href="{% url 'travel.views.main_site' %}">Home</a></li>
-                   <li><a href="{% url 'travel.views.about' %}">About</a></li>
-                   <li><a href="{% url 'travel.views.tours' %}">Tours</a></li>
-                   <li><a href="{% url 'travel.views.contact' %}">Contact</a></li>
-                   <li><a href="#">Our Blog</a></li>
-               </ul>
+               <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="{% url 'travel.views.main_site' %}">Travel CO</a>
+                    </div>
+                    <div>
+                      <ul class="nav navbar-nav">
+                            <li><a href="{% url 'travel.views.main_site' %}">Home</a></li>
+                            <li><a href="{% url 'travel.views.about' %}">About</a></li>
+                            <li><a href="{% url 'travel.views.tours' %}">Tours</a></li>
+                            <li><a href="{% url 'travel.views.contact' %}">Contact</a></li>
+                            <li><a href="{% url 'travel.views.table_show'%}">Prices</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                      </ul>
+                    </div>
+               </div>
            </nav>
-           </div>
-       </div>
+
          <div class="content">
              {% block content %}
 

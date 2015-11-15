@@ -1,0 +1,23 @@
+{% extends 'main-for-all-pages.html' %}
+{% load staticfiles %}
+
+{% block content %}
+        <h1>Test form</h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleOne">Enter your Email</label>
+            <input type="email" class="form-control" id="exampleOne" placeholder="Email"/>
+        </div>
+
+        <div class="form-group">
+            <label for="example_2">Enter yot name</label>
+            <input type="text" class="form-control" id="example_2" placeholder="Name"/>
+        </div>
+    
+        <div>
+            <label for="example_3">Text</label>
+            <input type="text" class="form-control" id="example_3" placeholder="Text"/>
+        </div>
+    <button type="submit" class="btn-default">Submit</button>
+    </form>
+{% endblock %}

@@ -22,7 +22,7 @@ def result():
         with file as f:
             for line in f:
                 dict['date'].append(line[0:8])
-                dict['time'].append(line[10:16])
+                dict['time'].append(line[10 :16])
                 dict['text'].append(line[19:])
             # не забудь удалить последние елементы массива
         res_dict = dict

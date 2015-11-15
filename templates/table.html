@@ -1,0 +1,110 @@
+{% extends 'main-for-all-pages.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <table border="2" class="table">
+    <caption class="text-center"><h1>Prices</h1></caption>
+        <thread>
+            <tr class="info">
+                <th>Country</th>
+                <th>Price</th>
+                <th>Days</th>
+                <th colspan="2">Include to price</th>
+
+            </tr>
+        </thread>
+        <tbody>
+           <tr class="success">
+               <td>Japan</td>
+               <td>1000 $ + plane tickets</td>
+               <td>12 days</td>
+               <td> Include:
+                <table>
+                    <tr>
+                        <ul>
+                            <li>Free wi-fi</li>
+                            <li>3-d time meal</li>
+                            <li>TV in apartment</li>
+                        </ul>
+                    </tr>
+                </table></td>
+           </tr>
+
+            <tr class="success">
+                <td>Ukraine</td>
+                <td>399$ + plane tickets</td>
+                <td>14 days</td>
+                <td> Include:
+                <table>
+                    <tr>
+                        <ul>
+                            <li>Free wi-fi</li>
+                            <li>3-d time meal</li>
+                            <li>TV in apartment</li>
+                        </ul>
+                    </tr>
+                </table></td>
+            </tr>
+
+            <tr class="success">
+                <td>Turkey</td>
+                <td>400$ + plane tickets</td>
+                <td>9 days</td>
+                <td> Include:
+                <table>
+                    <tr>
+                        <ul>
+                            <li>Free wi-fi</li>
+                            <li>3-d time meal</li>
+                            <li>TV in apartment</li>
+                        </ul>
+                    </tr>
+                </table></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+        <h1>table</h1>
+        <table border="2" class="table">
+        <caption>Таблица 1</caption>
+        <thread>
+            <tr>
+                <th colspan="2">З<sub>1</sub></th>
+                <th>З<sub>2</sub></th>
+            </tr>
+        </thread>
+        <tbody>
+
+        <tr>
+            <td rowspan="2">Я <sub>1</sub></td>
+            <td>Я<sub>2</sub></td>
+            <td>10<sup>00</sup>-12 <sup>00</sup></td>
+        </tr>
+        <tr>
+
+            <td>Я <sub>3</sub></td>
+            <td>13 <sup>00</sup>-15 <sup>00</sup></td>
+        </tr>
+
+
+        </tbody>
+        </table>
+
+    <form action="" method="post" class="form-group">
+        <label for="text">Enter the text</label>
+        <input type="text" name="text"/>
+        <label for="password">Enter the password</label>
+        <input type="password" name="password"/>
+        <label for="radio">Chek radio button</label>
+        <input type="radio" name="radio"/>
+        <label for="img_send">Select File</label>
+        <input type="file" name="img_send"/>
+        <button type="button" name="check" >Check errors</button>
+        <button type="submit">Send</button>
+
+    </form>
+
+
+{% endblock %}
